@@ -7,7 +7,7 @@ from PygamePlatformer2Levels import *
 from PygamePlatformer2SaveFile import *
 pygame.init()
 
-win = pygame.display.set_mode((1152/2, 640/2))
+win = pygame.display.set_mode((1152, 640))
 pygame.display.set_caption("Platformer")
 clock = pygame.time.Clock()
 
