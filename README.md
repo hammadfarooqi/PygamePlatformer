@@ -1,5 +1,7 @@
 # PygamePlatformer
 
+![PygamePlatformer Screenshot](./Backgrounds/MainMenu/MainMenu1.png)
+
 _PygamePlatformer_ is a simple one-player 2D Fixed-Camera Platform Shooter
 
 ## Table of Contents
