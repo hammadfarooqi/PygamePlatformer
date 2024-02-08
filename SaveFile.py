@@ -1,3 +1,3 @@
 worldNum = 1
-levelNum = 2
+levelNum = 1
 lives = 5
