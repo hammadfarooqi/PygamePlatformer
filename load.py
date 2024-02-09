@@ -42,11 +42,11 @@ gameOverAbout = button(832, 544, 288, 80)
 
 # Load block images
 blockImages = {}
-blockImages["grass"] = pygame.image.load('Environment/GrassBlock.png').convert_alpha()
-blockImages["dirt"] = pygame.image.load('Environment/DirtBlock.png').convert()
-blockImages["brick"] = pygame.image.load('Environment/Brick.png').convert()
-blockImages["brickFloor"] = pygame.image.load('Environment/BrickFloor.png').convert()
-# blockImages["spike"] = pygame.image.load('Environment/Spike.png').convert_alpha()
+blockImages["grass"] = pygame.image.load('Images/Environment/GrassBlock.png').convert_alpha()
+blockImages["dirt"] = pygame.image.load('Images/Environment/DirtBlock.png').convert()
+blockImages["brick"] = pygame.image.load('Images/Environment/Brick.png').convert()
+blockImages["brickFloor"] = pygame.image.load('Images/Environment/BrickFloor.png').convert()
+# blockImages["spike"] = pygame.image.load('Images/Environment/Spike.png').convert_alpha()
 heart = pygame.image.load('Images/Man/Heart.png').convert_alpha()
 
 # Load all animations
