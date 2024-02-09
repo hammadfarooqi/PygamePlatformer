@@ -3,11 +3,11 @@ Hammad Farooqi
 Pygame Platformer
 """
 import pygame
-from Levels import *
-from SaveFile import *
-from Player import *
-from Enemies import *
-from Visuals import *
+from Data.Levels import *
+from Data.SaveFile import *
+from Engine.Player import *
+from Engine.Enemies import *
+from Engine.Visuals import *
 from load import *
 pygame.init()
 
@@ -265,7 +265,7 @@ def runGame(bgCount, worldNum, levelNum, bullets, bulletsNum):
         #Game Over
         if man.lives == 0:
             run = False
-            file = open("PygamePlatformer2SaveFile.py", "w")
+            file = open("Data\SaveFile.py", "w")
             file.write("worldNum = "+str(worldNum)+ "\n")
             file.write("levelNum = 1\n")
             file.write("lives = 5")
@@ -280,7 +280,7 @@ def runGame(bgCount, worldNum, levelNum, bullets, bulletsNum):
                 run = False
                 global runEverything
                 runEverything = False
-                file = open("PygamePlatformer2SaveFile.py", "w")
+                file = open("Data\SaveFile.py", "w")
                 file.write("worldNum = "+str(worldNum)+ "\n")
                 file.write("levelNum = "+str(levelNum)+ "\n")
                 file.write("lives = "+str(man.lives))
@@ -288,7 +288,7 @@ def runGame(bgCount, worldNum, levelNum, bullets, bulletsNum):
         if keys[pygame.K_ESCAPE]:
             run = False
             runEverything = False
-            file = open("PygamePlatformer2SaveFile.py", "w")
+            file = open("Data\SaveFile.py", "w")
             file.write("worldNum = "+str(worldNum)+ "\n")
             file.write("levelNum = "+str(levelNum)+ "\n")
             file.write("lives = "+str(man.lives))

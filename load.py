@@ -1,5 +1,5 @@
 import pygame
-from Visuals import *
+from Engine.Visuals import *
 
 def loadPlatforms(level):
     platforms = []
@@ -14,7 +14,6 @@ def loadPlatforms(level):
             elif level[i][j] == 4:
                 platforms.append(block(64*j, 64*i, "brick"))
     return platforms
-
 
 pygame.init()
 
