@@ -14,14 +14,14 @@ pygame.init()
 screenWidth = 1152
 screenHeight = 640
 
-def refresh(worldNum, levelNum, platforms, bgCount):
+def refresh(worldNum, levelNum, platforms, bgCount, blockImages):
     win.blit(bg, (int(-16 * bgCount), 0))
     man.draw(win, animations)
     for bullet in bullets:
         if not(bullet.hide):
             bullet.draw(win)
     for platform in platforms:
-        platform.draw(win)
+        platform.draw(win, blockImages)
     for badGuy in badGuys:
         badGuy.draw(win, animations, levelNum, worldNum)
     man.draw(win, animations)
@@ -53,7 +53,7 @@ def runGame(bgCount, worldNum, levelNum, bullets, bulletsNum):
             platforms = loadPlatforms(level)
 
         #Redraws the level if the level changes
-        if levelReset == True:
+        if levelReset:
             level = levels[worldNum-1][levelNum - 1]
             platforms = loadPlatforms(level)
             
@@ -272,7 +272,7 @@ def runGame(bgCount, worldNum, levelNum, bullets, bulletsNum):
             file.close()
         
         #Draws everything and refreshes the screen
-        refresh(worldNum, levelNum, platforms, bgCount)
+        refresh(worldNum, levelNum, platforms, bgCount, blockImages)
 
         #X or Escape button to close
         for event in pygame.event.get():

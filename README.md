@@ -1,12 +1,13 @@
 # PygamePlatformer
 
-![PygamePlatformer Screenshot](./Backgrounds/MainMenu/MainMenu1.png)
+![Menu Screenshot](./Backgrounds/MainMenu/MainMenu1.png)
 
 _PygamePlatformer_ is a simple one-player 2D Fixed-Camera Platform Shooter
 
 ## Table of Contents
 
 - [Features](https://github.com/hammadfarooqi/PygamePlatformer/#features)
+- [Controls](https://github.com/hammadfarooqi/PygamePlatformer/#controls)
 - [Technologies](https://github.com/hammadfarooqi/PygamePlatformer/#technologies)
 - [Setup](https://github.com/hammadfarooqi/PygamePlatformer/#setup)
 
@@ -16,6 +17,13 @@ _PygamePlatformer_ is a simple one-player 2D Fixed-Camera Platform Shooter
 - **Recharable Gun:** Player carried a handgun that can have five outgoing bullets at any time and one-shots more simple enemies.
 - **Saved Progress:** Local storage of the player's last room and number of lives.
 - **Boss Fight:** The game ends with a boss fight against the _Glob Monster_ who becomes more and more powerful as its health decreases. 
+
+## Controls
+- **A, D** for left and right movement
+- **W** to jump
+- **Space** to shoot bullets (only five bullets can be airborne at a time)
+
+![Gameplay Screenshot](./Backgrounds/Screenshot.png)
 
 ## Technologies
 

@@ -13,6 +13,7 @@ def loadPlatforms(level):
                 platforms.append(block(64*j, 64*i, "brickFloor"))
             elif level[i][j] == 4:
                 platforms.append(block(64*j, 64*i, "brick"))
+    return platforms
 
 
 pygame.init()

@@ -24,5 +24,5 @@ class block():
         if self.img == "grass":
             self.verticalBuffer = 4
 
-    def draw(self, win):
-        win.blit(self.img, (self.x, self.y))
+    def draw(self, win, images):
+        win.blit(images[self.img], (self.x, self.y))
