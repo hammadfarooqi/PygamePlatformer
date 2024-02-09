@@ -38,4 +38,4 @@ To setup the dependencies for the application, run:
 python3 -m pip install -U pygame --user
 ```
 
-To start the game, run the PygamePlatformer2.py file
+To start the game, run the main.py file
