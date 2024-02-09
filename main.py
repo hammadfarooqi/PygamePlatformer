@@ -11,9 +11,6 @@ from Engine.Visuals import *
 from load import *
 pygame.init()
 
-screenWidth = 1152
-screenHeight = 640
-
 def refresh(worldNum, levelNum, platforms, bgCount, blockImages):
     win.blit(bg, (int(-16 * bgCount), 0))
     man.draw(win, animations)
@@ -295,16 +292,7 @@ def runGame(bgCount, worldNum, levelNum, bullets, bulletsNum):
             file.close()
     return worldNum
 
-
 #________________________________________________________________
-
-man = player(41, -90, 96, 96, 31, 36, 32, 60)
-badGuys = [baddy(8, 8, 2, 1),
-           baddy(2, 5, 9, 2), baddy(3, 8, 9, 2), baddy(3, 2, 9, 2), 
-           baddy(4, 6, 1, 3), baddy(8, 4, 1, 3), baddy(12, 6, 1, 3),
-           baddy(12, 5, 2, 4), baddy(6, 6, 2, 4)]
-glob = glob(screenWidth)
-bullets = []
 
 bgCount = 0
 

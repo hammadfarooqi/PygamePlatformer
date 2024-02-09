@@ -1,5 +1,8 @@
 import pygame
 from Engine.Visuals import *
+from Engine.Player import *
+from Engine.Enemies import *
+
 
 def loadPlatforms(level):
     platforms = []
@@ -17,6 +20,8 @@ def loadPlatforms(level):
 
 pygame.init()
 
+screenWidth = 1152
+screenHeight = 640
 win = pygame.display.set_mode((1152, 640))
 pygame.display.set_caption("Platformer")
 clock = pygame.time.Clock()
@@ -78,3 +83,11 @@ animations["globAttackActive"] = [pygame.image.load('Images/GlobMonster/Attack/A
 # animations["botIdleLeft"] = [pygame.image.load('Images/Bot/Idle/LIdle1.png').convert_alpha(), pygame.image.load('Images/Bot/Idle/LIdle2.png').convert_alpha(), pygame.image.load('Images/Bot/Idle/LIdle3.png').convert_alpha()]
 # animations["botTalkRight"] = [pygame.image.load('Images/Bot/Talking/RTalk1.png').convert_alpha(), pygame.image.load('Images/Bot/Talking/RTalk2.png').convert_alpha(), pygame.image.load('Images/Bot/Talking/RTalk3.png').convert_alpha()]
 # animations["botTalkLeft"] = [pygame.image.load('Images/Bot/Talking/LTalk1.png').convert_alpha(), pygame.image.load('Images/Bot/Talking/LTalk2.png').convert_alpha(), pygame.image.load('Images/Bot/Talking/LTalk3.png').convert_alpha()]
+
+man = player(41, -90, 96, 96, 31, 36, 32, 60)
+badGuys = [baddy(8, 8, 2, 1),
+           baddy(2, 5, 9, 2), baddy(3, 8, 9, 2), baddy(3, 2, 9, 2), 
+           baddy(4, 6, 1, 3), baddy(8, 4, 1, 3), baddy(12, 6, 1, 3),
+           baddy(12, 5, 2, 4), baddy(6, 6, 2, 4)]
+glob = glob(screenWidth)
+bullets = []
