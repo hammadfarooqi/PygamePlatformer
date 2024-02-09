@@ -1,6 +1,6 @@
 # PygamePlatformer
 
-![Menu Screenshot](./Backgrounds/MainMenu/MainMenu1.png)
+![Menu Screenshot](./Images/Backgrounds/MainMenu/MainMenu1.png)
 
 _PygamePlatformer_ is a simple one-player 2D Fixed-Camera Platform Shooter
 
@@ -23,7 +23,7 @@ _PygamePlatformer_ is a simple one-player 2D Fixed-Camera Platform Shooter
 - **W** to jump
 - **Space** to shoot bullets (only five bullets can be airborne at a time)
 
-![Gameplay Screenshot](./Backgrounds/Screenshot.png)
+![Gameplay Screenshot](./Images/Backgrounds/Screenshot.png)
 
 ## Technologies
 
